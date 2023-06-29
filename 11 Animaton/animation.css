@@ -1,0 +1,51 @@
+.main{
+    height: 400px;
+    width: 400px;
+    border: 4px solid blue;
+    box-sizing: border-box;
+    /* position: absolute; */
+    margin: auto;
+    
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid orangered;
+    box-shadow: 6px 6px 15px red;
+    background-color: rgb(225, 252, 138);
+    position: relative;
+    animation: keshav_box;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* animation-direction: reverse; */
+    /* animation-delay: 2s; */
+    animation-fill-mode: both;
+    
+    
+}
+@keyframes keshav_box{
+    0%{
+        left: 0px;
+        top: 0px;
+        box-shadow: 6px 6px 15px red;
+        background-color: rgb(225, 252, 138);
+    }
+    25%{
+        left: 290px;
+        top: 0px;
+        background-color: rgb(244, 138, 252);
+    }   
+    50%{
+        top: 290px;
+        left: 290px;
+        background-color: rgb(225, 252, 138);
+    }
+    75%{
+        top: 290px;
+        left: 0px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}   
